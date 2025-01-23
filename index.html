@@ -64,10 +64,10 @@
 </head>
 <body>
     <div class="sun"></div>
-    <div class="planet" style="--orbit-radius: 100px;"></div>
-    <div class="planet" style="--orbit-radius: 150px;"></div>
-    <div class="planet" style="--orbit-radius: 200px;"></div>
-    
+<div class="planet" style="animation: orbit 5s linear infinite;"></div>
+<div class="planet" style="animation: orbit 8s linear infinite; transform-origin: 150px 0;"></div>
+<div class="planet" style="animation: orbit 12s linear infinite; transform-origin: 200px 0;"></div>
+
     <script>
         const planets = document.querySelectorAll('.planet');
         planets.forEach((planet, index) => {
